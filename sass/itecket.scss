@@ -1,0 +1,115 @@
+.header-container {
+    height: 100vh;
+    margin: 20px 50px;
+    animation: b-g 5s infinite;
+    border-radius: 20px;
+    cursor: pointer;
+
+    header {
+        display: grid;
+        grid-template-columns: 20% auto 20%;
+        justify-content: space-around;
+        align-items: center;
+        font-family: sans-serif;
+        padding: 30px 0px;
+        
+    }
+    .logo {
+
+        a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      
+      span {
+        color: yellow;
+      }
+
+      span:first-child {
+        color: grey;
+        border: 1px solid yellow;
+        padding: 2px 10px;
+        background-color: yellow;
+        border-radius: 5px;
+      }
+      span:last-child {
+        color: grey;
+      }
+        }
+        a:first-child {
+            font-size: 2em;
+            font-weight: 600;
+        }
+        a:last-child {
+            border: 1px solid white;
+            padding: 2px 4px;
+            border-radius: 6px;
+            font-size: 18px;
+        }
+    }
+    .header-categories {
+
+        ul {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            justify-content: space-between;
+            gap: 25px;
+        
+        li {
+            list-style: none;
+
+        
+         a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+
+            &:hover {
+            border-bottom: 5px solid yellow;    
+            }
+         } 
+        }
+        li:last-child {
+
+            &:hover a {
+                border: none;
+            }
+        }
+    }
+    }
+    .header-icons {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+       
+        div {
+         
+            a {
+                text-decoration: none;
+                margin: 0 10px;
+                color: white;
+                font-size: 18px;
+
+                sup {
+                    font-weight: 600;
+                }
+            }
+            a:last-child {
+                color: black;
+                border: 1px solid;
+                padding: 10px;
+                border-radius: 50%;
+                background-color: yellow;
+                border: none;
+            }
+        }
+    }
+
+    @keyframes b-g {
+        0% {background: url(../media/1rNRVmygtiKzZvPpkQkYkrOyeZ8yDGk61FdGqDbD.jpg);}
+        25% {background: url(../media/cVMgkx6cPBbsceyXXMD6U99xZLBogjek7ViIUQ5Z.jpg);}
+        50% {background: url(../media/ssQdbhnyXlJKtjoNmrIk9rRdpnK9ljcxMJSMESq2.jpg);}
+        100% {background: url(../media/UgkvJeOcCrxrUo8XcPXhzA6EsSOS1gyUGUr2ZBpG.jpg);}          
+    }
+}

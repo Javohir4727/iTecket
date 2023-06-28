@@ -1,3 +1,102 @@
-
+.header-container {
+  height: 100vh;
+  margin: 20px 50px;
+  animation: b-g 5s infinite;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.header-container header {
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+  padding: 30px 0px;
+}
+.header-container .logo a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.header-container .logo a span {
+  color: yellow;
+}
+.header-container .logo a span:first-child {
+  color: grey;
+  border: 1px solid yellow;
+  padding: 2px 10px;
+  background-color: yellow;
+  border-radius: 5px;
+}
+.header-container .logo a span:last-child {
+  color: grey;
+}
+.header-container .logo a:first-child {
+  font-size: 2em;
+  font-weight: 600;
+}
+.header-container .logo a:last-child {
+  border: 1px solid white;
+  padding: 2px 4px;
+  border-radius: 6px;
+  font-size: 18px;
+}
+.header-container .header-categories ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  justify-content: space-between;
+  gap: 25px;
+}
+.header-container .header-categories ul li {
+  list-style: none;
+}
+.header-container .header-categories ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+.header-container .header-categories ul li a:hover {
+  border-bottom: 5px solid yellow;
+}
+.header-container .header-categories ul li:last-child:hover a {
+  border: none;
+}
+.header-container .header-icons {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+.header-container .header-icons div a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: white;
+  font-size: 18px;
+}
+.header-container .header-icons div a sup {
+  font-weight: 600;
+}
+.header-container .header-icons div a:last-child {
+  color: black;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: yellow;
+  border: none;
+}
+@keyframes b-g {
+  0% {
+    background: url(../media/1rNRVmygtiKzZvPpkQkYkrOyeZ8yDGk61FdGqDbD.jpg);
+  }
+  25% {
+    background: url(../media/cVMgkx6cPBbsceyXXMD6U99xZLBogjek7ViIUQ5Z.jpg);
+  }
+  50% {
+    background: url(../media/ssQdbhnyXlJKtjoNmrIk9rRdpnK9ljcxMJSMESq2.jpg);
+  }
+  100% {
+    background: url(../media/UgkvJeOcCrxrUo8XcPXhzA6EsSOS1gyUGUr2ZBpG.jpg);
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
